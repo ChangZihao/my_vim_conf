@@ -71,3 +71,29 @@ cd ~
 mv ~/.tmux.conf ~/.tmux.conf_bak
 ln -s $vimConf/tmux/.tmux.conf .
 ```
+
+# Zsh
+Install zsh
+```
+sudo apt update
+sudo apt install zsh
+```
+
+Install on-my-zsh
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+Install pluging
+```
+cd ~/.oh-my-zsh/custom/plugins/
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+git clone https://github.com/zsh-users/zsh-autosuggestions
+```
+
+Link config file
+```
+cd ~
+mv .zshrc .zshrc_bak
+ln -s $vimConf/zsh/zshrc ./.zshrc
+```
