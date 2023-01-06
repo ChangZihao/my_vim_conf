@@ -14,6 +14,7 @@ download `nvim.appimage` with browser, wget, or anything you like.
 ``` shell
 # Linux:
 chmod u+x nvim.appimage
+mkdir ~/.local/bin
 mv nvim.appimage ~/.local/bin  # assume that ~/.local/bin is in $PATH
 ```
 
@@ -42,6 +43,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 Install pynvim to enable jedi and YCM:
 ``` shell
+sudo apt install python3-pip
 python3 -m pip install --user --upgrade pynvim
 ```
 
@@ -57,6 +59,7 @@ Open `nvim`, and input command `:PlugInstall`, it will git clone jedi and YCM fo
 If you need YCM (C++ support), you should further install YCM with clang support
 ``` shell
 cd $vimConf/vim/bundle/YouCompleteMe
+sudo apt install cmake
 ./install.py --clang-completer --verbose
 ```
 
