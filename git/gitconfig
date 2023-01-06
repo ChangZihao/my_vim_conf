@@ -1,0 +1,45 @@
+[http]
+	sslVerify = false
+	postBuffer = 1048576000
+	proxy = http://10.16.0.183:7890
+[https]
+	sslVerify = false
+	postBuffer = 1048576000
+	proxy = http://10.16.0.183:7890
+[user]
+	name = Zihao Chang
+	email = changzihao95@gmail.com
+[core]
+	editor = vim
+[alias]
+        s = status --short --branch
+        ss = status
+        brd = branch -D
+        brm = branch -m
+        br = branch
+        bra = branch --all
+        ci = commit
+        cim = commit -m
+        cia = commit -a
+        co = checkout
+        cob = checkout -b
+        fe = fetch origin
+        fp = fetch origin -p
+        last = log -1 HEAD
+        unstage = reset HEAD --
+        lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+        mg = merge --squash --no-commit
+        pl = pull
+        plo = pull origin
+        ph = push
+        pho = push origin
+        df = diff
+        stl = stash list
+        st = stash
+        stp = stash pop
+        sta = stash apply
+        sts = stash save
+        stc = stash clear
+        rb = rebase
+        rba = rebase --abort
+        rec = rebase --continue

@@ -100,3 +100,10 @@ cd ~
 mv .zshrc .zshrc_bak
 ln -s $vimConf/zsh/zshrc ./.zshrc
 ```
+
+# git
+```
+cd ~
+mv .gitconfig .gitconfig_back
+ln -s $vimConf/git/gitconfig ./.gitconfig
+```
