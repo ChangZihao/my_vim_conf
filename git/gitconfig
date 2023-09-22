@@ -1,11 +1,11 @@
 [http]
 	sslVerify = false
 	postBuffer = 1048576000
-	proxy = http://10.16.0.183:7890
+    proxy = http://czh:czh@10.16.0.183:7890
 [https]
 	sslVerify = false
 	postBuffer = 1048576000
-	proxy = http://10.16.0.183:7890
+    proxy = http://czh:czh@10.16.0.183:7890
 [user]
 	name = Zihao Chang
 	email = changzihao95@gmail.com
@@ -43,3 +43,5 @@
         rb = rebase
         rba = rebase --abort
         rec = rebase --continue
+[pager]
+	branch = false
