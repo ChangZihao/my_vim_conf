@@ -7,3 +7,4 @@
 [submodule "ssh_pub_key"]
 	path = ssh_pub_key
 	url = https://gitee.com/zihaochang/ssh_pub_key.git
+	branch = main

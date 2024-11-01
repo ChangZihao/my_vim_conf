@@ -107,3 +107,11 @@ cd ~
 mv .gitconfig .gitconfig_back
 ln -s $vimConf/git/gitconfig ./.gitconfig
 ```
+
+# SSH Public Keys
+
+```
+git submodule update --init ssh_pub_key
+mv .ssh/authorized_keys .ssh/authorized_keys_bak
+ln -s $vimConf/ssh_pub_key/authorized_keys ./.ssh/authorized_keys
+```
